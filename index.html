@@ -269,8 +269,8 @@
                     <!-- Soft decorative background box instead of stark border -->
                     <div class="absolute inset-0 bg-brand-sand rounded-t-full translate-x-3 translate-y-3 sm:translate-x-5 sm:translate-y-5 transition-transform duration-700 group-hover:translate-x-6 group-hover:translate-y-6 reveal delay-200"></div>
                     <div class="relative overflow-hidden rounded-t-full aspect-[3/4] reveal-wipe shadow-premium">
-                        <!-- Changed grayscale to full color, slightly warm filter -->
-                        <img src="https://github.com/nitnapple/ravi/blob/main/Ravi-profile.jpeg?raw=true&auto=format&fit=crop&w=800&q=80" alt="Ravi Kumar" class="w-full h-full object-cover transition-transform duration-1000 lg:group-hover:scale-105 filter sepia-[0.1]">
+                        <!-- Removed sepia filter which caused rendering issues on some mobile devices, added robust fallback to previous URL -->
+                        <img src="https://res.cloudinary.com/dklxfmaq9/image/upload/v1775101075/Ravi-profile_ksge5a.jpg" alt="Ravi Kumar" class="w-full h-full object-cover transition-transform duration-1000 lg:group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='https://github.com/nitnapple/ravi/blob/main/Ravi-profile.jpeg?raw=true';">
                     </div>
                 </div>
                 
@@ -465,18 +465,24 @@
                             <a href="tel:+919876543210" class="text-brand-dark hover:text-brand-gold transition-colors">+91 99712 35951</a>
                         </div>
                         <div class="flex items-center gap-4 sm:gap-6 group cursor-pointer w-fit">
-                            <span class="w-8 sm:w-12 h-[1px] bg-brand-dark/20 group-hover:bg-[#25D366] group-hover:w-12 sm:group-hover:w-16 transition-all"></span>
-                            <a href="https://wa.me/919971235951" target="_blank" class="text-brand-dark hover:text-[#25D366] transition-colors flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 0C5.393 0 .012 5.38.012 12.018c0 2.122.553 4.192 1.603 6.014L.048 24l6.113-1.604c1.745.952 3.715 1.455 5.865 1.455h.005c6.634 0 12.016-5.38 12.016-12.016C24.048 5.38 18.667 0 12.031 0zm.005 21.843h-.004c-1.802 0-3.567-.484-5.114-1.4l-.367-.217-3.804.997 1.018-3.707-.238-.378c-.997-1.583-1.523-3.418-1.523-5.3 0-5.508 4.484-9.992 9.997-9.992 5.513 0 9.998 4.484 9.998 9.993 0 5.51-4.485 9.994-9.963 9.994zm5.485-7.493c-.301-.151-1.782-.88-2.059-.98-.277-.101-.48-.151-.681.151-.202.301-.778.98-1.028 1.181-.251.201-.504.227-.805.076-.301-.151-1.272-.469-2.424-1.496-.897-.8-1.503-1.788-1.754-2.089-.251-.302-.027-.465.123-.615.136-.136.301-.352.451-.528.151-.176.202-.301.301-.502.101-.201.051-.377-.024-.528-.076-.151-.681-1.644-.932-2.253-.246-.593-.497-.512-.681-.521-.176-.008-.378-.011-.58-.011-.202 0-.528.075-.805.376-.277.301-1.054 1.03-1.054 2.511 0 1.482 1.079 2.914 1.23 3.115.151.201 2.124 3.242 5.143 4.542.718.309 1.278.494 1.714.633.722.229 1.38.196 1.898.119.584-.087 1.782-.728 2.033-1.431.251-.703.251-1.306.176-1.432-.075-.126-.277-.202-.578-.353z"/></svg>
-                                WhatsApp: +91 99712 35951
+                            <span class="w-8 sm:w-12 h-[1px] bg-brand-dark/20 group-hover:bg-[#E1306C] group-hover:w-12 sm:group-hover:w-16 transition-all"></span>
+                            <a href="https://www.instagram.com/rv_anchor/" target="_blank" class="text-brand-dark hover:text-[#E1306C] transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                Instagram: @rv_anchor
                             </a>
                         </div>
-                    </div>
-
+                        <div class="flex items-center gap-4 sm:gap-6 group cursor-pointer w-fit">
+                            <span class="w-8 sm:w-12 h-[1px] bg-brand-dark/20 group-hover:bg-[#25D366] group-hover:w-12 sm:group-hover:w-16 transition-all"></span>
                     <div class="mt-12 sm:mt-16 flex gap-6">
-                        <a href="#" class="text-brand-muted hover:text-brand-dark p-2 -ml-2 transition-colors"><i data-lucide="instagram" class="w-5 h-5 sm:w-6 sm:h-6"></i></a>
-                        <a href="#" class="text-brand-muted hover:text-brand-dark p-2 transition-colors"><i data-lucide="linkedin" class="w-5 h-5 sm:w-6 sm:h-6"></i></a>
-                        <a href="#" class="text-brand-muted hover:text-brand-dark p-2 transition-colors"><i data-lucide="twitter" class="w-5 h-5 sm:w-6 sm:h-6"></i></a>
+                        <a href="https://www.instagram.com/rv_anchor/" target="_blank" class="text-brand-muted hover:text-brand-dark p-2 -ml-2 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="text-brand-muted hover:text-brand-dark p-2 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="#" class="text-brand-muted hover:text-brand-dark p-2 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        </a>
                     </div>
                 </div>
 
@@ -487,8 +493,8 @@
                         <div class="w-16 h-16 sm:w-20 sm:h-20 border border-brand-gold rounded-full flex items-center justify-center mb-6 sm:mb-8 text-brand-gold">
                             <i data-lucide="check" class="w-6 h-6 sm:w-8 sm:h-8"></i>
                         </div>
-                        <h3 class="font-serif text-2xl sm:text-3xl text-brand-dark italic mb-3 sm:mb-4">Inquiry Received.</h3>
-                        <p class="text-brand-muted font-medium text-sm sm:text-base">My management team will connect with you shortly.</p>
+                        <h3 class="font-serif text-2xl sm:text-3xl text-brand-dark italic mb-3 sm:mb-4">Inquiry Initiated.</h3>
+                        <p class="text-brand-muted font-medium text-sm sm:text-base">Redirecting you to WhatsApp to send your details.</p>
                         <button onclick="resetForm()" class="mt-8 text-[10px] sm:text-xs uppercase tracking-widest text-brand-gold link-stylish pb-1">Submit Another</button>
                     </div>
 
@@ -503,9 +509,10 @@
                                 <input type="email" id="email" required class="w-full bg-transparent border-b border-brand-dark/20 py-3 sm:py-4 text-brand-dark font-medium text-base sm:text-lg focus:outline-none focus:border-brand-gold transition-colors peer placeholder-transparent" placeholder="Email">
                                 <label for="email" class="absolute left-0 top-3 sm:top-4 text-brand-muted text-base sm:text-lg transition-all peer-focus:-top-4 peer-focus:text-[10px] sm:peer-focus:text-xs peer-focus:text-brand-gold peer-focus:uppercase peer-focus:tracking-widest peer-valid:-top-4 peer-valid:text-[10px] sm:peer-valid:text-xs peer-valid:uppercase peer-valid:tracking-widest cursor-text">Email Address</label>
                             </div>
+                            <!-- Swapped to Native Date picker for perfect mobile support and usability -->
                             <div class="relative group">
-                                <input type="text" id="date" required class="w-full bg-transparent border-b border-brand-dark/20 py-3 sm:py-4 text-brand-dark font-medium text-base sm:text-lg focus:outline-none focus:border-brand-gold transition-colors peer placeholder-transparent" placeholder="Date">
-                                <label for="date" class="absolute left-0 top-3 sm:top-4 text-brand-muted text-base sm:text-lg transition-all peer-focus:-top-4 peer-focus:text-[10px] sm:peer-focus:text-xs peer-focus:text-brand-gold peer-focus:uppercase peer-focus:tracking-widest peer-valid:-top-4 peer-valid:text-[10px] sm:peer-valid:text-xs peer-valid:uppercase peer-valid:tracking-widest cursor-text">Event Date</label>
+                                <input type="date" id="date" required class="w-full bg-transparent border-b border-brand-dark/20 py-3 sm:py-4 text-brand-dark font-medium text-base sm:text-lg focus:outline-none focus:border-brand-gold transition-colors peer" placeholder=" ">
+                                <label for="date" class="absolute left-0 -top-4 text-[10px] sm:text-xs text-brand-muted uppercase tracking-widest transition-all peer-focus:text-brand-gold">Event Date</label>
                             </div>
                         </div>
 
@@ -515,7 +522,7 @@
                         </div>
 
                         <button type="submit" class="w-full btn-outline border border-brand-dark py-4 sm:py-5 text-brand-dark uppercase tracking-widest text-xs sm:text-sm font-bold mt-6">
-                            Send Inquiry
+                            Send Inquiry via WhatsApp
                         </button>
                     </form>
                 </div>
@@ -535,10 +542,18 @@
                     &copy; <span id="year"></span> All Rights Reserved.
                 </p>
                 <div class="flex space-x-6 justify-center flex-1">
-                    <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                    <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-                    <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-                    <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                    <a href="https://www.instagram.com/rv_anchor/" target="_blank" class="text-brand-muted hover:text-brand-dark transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </a>
+                    <a href="#" class="text-brand-muted hover:text-brand-dark transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7.1c.3-1.5 1.5-2.7 3-3C8.6 3.5 12 3.5 12 3.5s3.4 0 6.5.6c1.5.3 2.7 1.5 3 3 .6 3.1.6 6.4.6 6.4s0 3.3-.6 6.4c-.3 1.5-1.5 2.7-3 3-3.1.6-6.5.6-6.5.6s-3.4 0-6.5-.6c-1.5-.3-2.7-1.5-3-3C2 13.5 2 10.2 2 10.2s0-3.3.6-6.4z"/><polygon points="9.75 15.02 15.5 11.98 9.75 8.94 9.75 15.02"/></svg>
+                    </a>
                 </div>
                 <div class="flex space-x-6 sm:space-x-8 text-[10px] sm:text-xs tracking-widest uppercase font-medium justify-center md:justify-end flex-1 mt-4 md:mt-0">
                     <a href="#" class="text-brand-muted hover:text-brand-gold transition-colors p-2 sm:p-0">Privacy</a>
@@ -700,12 +715,31 @@
             observer.observe(el);
         });
 
-        // Form Submission Simulation
+        // Form Submission to WhatsApp
         const form = document.getElementById('contactForm');
         const successMsg = document.getElementById('successMessage');
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
+
+            // Extract values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const rawDate = document.getElementById('date').value;
+            const message = document.getElementById('message').value;
+
+            // Format native date from YYYY-MM-DD to DD/MM/YYYY
+            const dateParts = rawDate.split('-');
+            const formattedDate = dateParts.length === 3 ? `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}` : rawDate;
+
+            // Construct WhatsApp Text Message
+            const waText = `Hi Ravi,\nI have an inquiry for an upcoming event.\n\n*Name:* ${name}\n*Email:* ${email}\n*Date:* ${formattedDate}\n*Details:* ${message}`;
+            const waUrl = `https://wa.me/919971235951?text=${encodeURIComponent(waText)}`;
+
+            // Open WhatsApp in a new tab
+            window.open(waUrl, '_blank');
+
+            // Show Success Animation in the UI
             form.style.opacity = '0';
             setTimeout(() => {
                 form.classList.add('hidden');
